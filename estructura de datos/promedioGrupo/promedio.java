@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PromedioGrupo {
+public class promedio {
   /* promedio que calcula el promedio de un grupo
    * El tamaño de grupp ed N*/  
    //Las calificaciones se leen y se almacenan en un arreglo de tamaño N/
@@ -38,8 +38,6 @@ public class PromedioGrupo {
         System.out.println("Escriba  calificacion de ingles: ");
         entrada = bufer.readLine();
         e.setIngles(Double.parseDouble(entrada));
-        e.setPromedio();
-        estudiantes[i] = e;//agregamos un objeto estudiante al arreglo
     }
    }
     
@@ -80,5 +78,6 @@ public class PromedioGrupo {
             System.out.println(calificaciones[i]);
         }
         System.out.println("El promedio del grupo es: " + promedio);
-    }
+    }
+    
 }

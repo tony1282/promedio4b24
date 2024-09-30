@@ -1,66 +1,78 @@
 public class estudiante {
+
     private String matricula;
     private String nombre;
-    private String estructuras;
-    private String evaluacion;
-    private String ingles;
-    private Double promedio;
- 
-    //constrictor es contruir e inicializar el objeto 
+    private double estructuras;
+    private double evaluacion;
+    private double ingles;
+    private double promedio;
+
+    //construrtor
+    //set agregar
     //getters consultar
-    //sett agregar 
-    public estudiante (String m, String n){
-        //el objetivo es inicializar 
+    public estudiante(String m, String n) {
+        //El objetivo es construir e inicializar el objeto
         this.matricula = m;
-        this.nombre = n; 
-    }//getters y Setters
-    //Get es un metodo consultor
-    //set metodo modificador
+        this.nombre = n;
+    }
+    // Getters y Setters 
+
+    // get metodos consultor
     public String getMatricula() {
         return matricula;
     }
+
+    // Set metodo constructor
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getEstructuras() {
+
+    public double getEstructuras() {
         return estructuras;
     }
-    public void setEstructuras(String estructuras) {
+
+    public void setEstructuras(double estructuras) {
         this.estructuras = estructuras;
     }
-    public String getEvaluacion() {
+
+    public double getEvaluacion() {
         return evaluacion;
     }
-    public void setEvaluacion(String evaluacion) {
+
+    public void setEvaluacion(double evaluacion) {
         this.evaluacion = evaluacion;
     }
-    public String getIngles() {
+
+    public double getIngles() {
         return ingles;
     }
-    public void setIngles(String ingles) {
+
+    public void setIngles(double ingles) {
         this.ingles = ingles;
     }
-    public Double getPromedio() {
+
+    public double getPromedio() {
         return promedio;
     }
-    public void setPromedio(Double promedio) {
-        this.promedio = promedio;
+
+    public void setPromedio() {
+        this.promedio = (this.estructuras + this.evaluacion + this.ingles) /3;
     }
-    @Override
+
+    @Override // es para sobrescribir sobre un objeto y se adapta
+    //object es la clase principal  de java, estudiante hereda la de object que esd una super clase
     public String toString() {
-        return "estudiante [matricula=" + matricula + ", nombre=" + nombre + ", promedio=" + promedio + "]";
+        return "Estudiante [matricula=" + matricula + ", nombre=" + nombre + ", promedio=" + promedio + "]";
     }
-    //hola
-
     
-    
-
-
 }
+
 
