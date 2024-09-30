@@ -19,6 +19,7 @@ public class PromedioGrupo{
             double[] calificaciones;//arreglo de calificaciones
             double suma = 0;//para sumar calificaciones
             double promedio;//el promedio del grupo
+            estudiante[] estudiantes;
 
             System.out.println("Programa que calcula el promedio de un grupo");
             System.out.println("escribe el tamano del grupo");
